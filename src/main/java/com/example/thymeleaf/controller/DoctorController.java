@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DoctorController {
 
-    @GetMapping("/doctor")
+    @GetMapping("/doctor/")
     public String doctor() {
+
         return "doctor";
     }
 }
