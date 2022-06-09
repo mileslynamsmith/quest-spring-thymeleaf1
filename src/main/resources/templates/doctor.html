@@ -13,8 +13,8 @@
     </nav>
 </header>
 <section>
-    <h1>Welcome $doctorname</h1>
-    <h3>Your number is $doctornumber</h3>
+    <h1 th:text="|Welcome ${name}|"></h1>
+    <h3 th:text="|Your number is ${number}|"></h3>
 </section>
 <footer th:replace="footer.html :: bottom">
     <ul>
