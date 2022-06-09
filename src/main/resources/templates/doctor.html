@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>Header TODO</header>
+<header th:replace="header.html :: top">
+    <nav>
+        <span>Doctor Secret Service</span>
+        <a href="/">Sign In</a>
+    </nav>
+</header>
 <section>
     <h1>Welcome $doctorname</h1>
     <h3>Your number is $doctornumber</h3>
 </section>
-<footer>Footer TODO</footer>
+<footer th:replace="footer.html :: bottom">
+    <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">TARDIS</a></li>
+    </ul>
+    <span>Copyright BBC/Terry Nation 1963</span>
+</footer>
 </body>
 </html>
